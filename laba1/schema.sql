@@ -1,3 +1,4 @@
+begin;
 
 create table warehouses (
     id integer generated always as identity primary key, 
@@ -46,3 +47,4 @@ create table stocks(
     primary key (warehouse_id, product_id)
 );
 
+commit;
